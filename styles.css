@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#list {
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	max-width: 80%;
+	grid-gap: 20px;
+}
+
+#list > div {
+	max-width: 100%;
+	box-shadow: 1px 0px 4px rgb(158, 158, 158);
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.container {
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.light-big {
+	color: gray;
+}
+
+.light {
+	font-weight: 400;
+	color: gray;
+	font-size: 1rem;
+}
+
+.cross {
+	text-decoration: line-through;
+}
+
+h5,
+p {
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+.green {
+	color: rgb(0, 128, 64);
+}
+
+.center {
+	align-items: center;
+}
+
+.blue {
+	color: rgb(64, 75, 224);
+}
+
+img {
+	position: relative;
+	z-index: -100;
+	display: block;
+}
+
+.gradient {
+	display: inline-block;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	z-index: 0;
+}
+
+.red-label {
+	color: white;
+	background-color: red;
+	padding: 0.5rem;
+	clip-path: polygon(100% 0%, 100% 51%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.column {
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.padding {
+	padding: 1rem;
+	z-index: 100;
+}
+
+.contain {
+	position: relative;
+}
+
+h4 {
+	color: red;
+	font-size: 2.5rem;
+}
+
+.rating {
+	position: absolute;
+	background-color: orange;
+	color: white;
+	font-weight: 400;
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-align: center;
+	top: 3rem;
+	right: 0;
+	margin: 0.5rem;
+}
+
+.rating span {
+	font-size: 2rem;
+}
+
+.tags {
+	position: absolute;
+	top: 45%;
+	left: 5%;
+}
+
+.tag {
+	background-color: white;
+	color: black;
+	border-radius: 25px;
+	padding: 0.5rem 1.5rem;
+	margin-right: 2rem;
+}
+
+.footer-bar {
+	z-index: 2;
+}
+
+.footer-bar::after {
+	content: '';
+	position: absolute;
+	background-color: rgb(101, 224, 163);
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	width: 60%;
+	z-index: -1;
+	height: 3rem;
+	left: 0;
+	bottom: 0.5rem;
+}
+
+.promote {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: -2rem;
+	background-color: rgb(0, 119, 255);
+	color: white;
+	clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 15% 52%, 0% 0%);
+	padding: 0.25rem 0.5rem;
+	padding-left: 2.5rem;
+}
